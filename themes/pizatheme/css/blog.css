@@ -1,0 +1,306 @@
+/* 
+    Theme Name:gymtheme
+    Theme URI:
+    Author:David Vinter
+    Author URI:
+    Description: My Theme for GYM
+    Version:1.0
+    License:GNU General Public License v2 or later
+    License URI: http://wwww.gnu.org/licenses/gpl-2.0.html
+    Tags:Css Grid, Flexbox, Responsive, Bootstrap, Javascript
+
+*/
+
+
+
+/* Blog */
+
+.blog-Big{
+    display: flex;
+    
+}
+
+
+.blogPosts{
+    width: 65%;
+    display: block;
+    padding-top: 8rem;
+}
+
+.blogPosts .blog{
+
+}
+
+.blogPosts .blog img{
+    width: 100%;
+}
+
+
+
+.blogPosts .blog .blog-head {
+    display: flex;
+}
+
+.blogPosts .blog .blog-head .blogTime{
+    width: 17%;
+    margin-right: 0rem;
+}
+
+.blogPosts .blog .blog-head .blogTime span{
+    position: relative;
+    top: -2rem;
+}
+
+.blogPosts .blog .blog-head .blogTime p{
+    background-color: rgb(255, 208, 52);
+    width: 74%;
+    height: 64%;
+    position: relative;
+    margin-top: 1.5rem;
+    font-size: 3rem;
+    font-weight: 900;
+}
+
+.blogPosts .blog .blog-head .blogAuthor{
+    width: 87%;
+}
+
+.blogPosts .blog .blog-head .blogAuthor .nameblog{
+    font-size: 3rem;
+    line-height: 1rem;
+    text-align: left;
+    text-transform: uppercase;
+}
+
+.blogPosts .blog .blog-head .blogAuthor .authorBlog{
+    text-align: left;
+    text-transform: uppercase;
+}
+
+
+.blogPosts .blog .blog-content {
+    text-align: left;
+}
+
+.blogPosts .blog .blog-content p{
+    line-height: 4rem;
+    margin: 0;
+}
+
+.blogPosts .blog .blog-read {
+    text-align: left;
+}
+
+.blogPosts .blog .blog-read button{
+    text-transform: lowercase;
+    background: var(--backColor);
+    border: none;
+    font-size: 2rem;
+    margin-top: 2rem;
+    padding: 1.5rem;
+    width: 19rem;
+    border-radius: 9px;
+    margin-bottom: 4rem;
+    color: white;
+    transition: 0.3 ease all;
+    font-family: var(--mainFont);
+    cursor: pointer;
+}
+
+.blogPosts .blog .blog-read button:hover{
+    color: black;
+}
+
+
+.page .page-content .blog-head {
+    display: flex;
+}
+
+.page .page-content .blog-head .blogTime2{
+    width: 15%;
+    margin-right: 0rem;
+}
+
+.page .page-content .blog-head .blogTime2 span{
+    position: relative;
+    top: -2rem;
+}
+.page .page-content .blog-head .blogTime2 p{
+    background-color: rgb(255, 208, 52);
+    width: 54%;
+    height: 57%;
+    position: relative;
+    margin-top: 1.5rem;
+    font-size: 3rem;
+    font-weight: 900;
+}
+
+
+.page .page-content .blog-head .blogAuthor2{
+    width: 82%;
+}
+
+.page .page-content .blog-head .blogAuthor2 .nameblog{
+    font-size: 3rem;
+    line-height: 1rem;
+    text-align: left;
+    text-transform: uppercase;
+}
+
+.page .page-content .blog-head .blogAuthor2 .authorBlog{
+    text-align: left;
+    text-transform: uppercase;
+    position: relative;
+    top: 3.5rem;
+    font-size: 2.5rem;
+    right: 5rem;
+}
+
+
+/* Comments  */
+
+.comment-list h3{
+    text-align: center;
+    color: var(--backColor);
+}
+
+.comments .comment-respond .comment-form .form-submit .submit{
+    text-transform: lowercase;
+    background: var(--backColor);
+    border: none;
+    font-size: 2rem;
+    margin-top: 2rem;
+    padding: 1.5rem;
+    width: 19rem;
+    border-radius: 9px;
+    margin-bottom: 4rem;
+    color: white;
+    transition: 0.3 ease all;
+    font-family: var(--mainFont);
+    cursor: pointer;
+}
+
+.comments .comment-respond .comment-form .form-submit .submit:hover{
+    color: black;
+}
+
+.comment-list .comment .avatar{
+    width: 5rem;
+    height: 5rem;
+    margin-left: 2rem;
+}
+.comment-list .comment .comment-body .comment-author .url{
+    font-size: 2rem;
+    color: var(--yellow);
+    position: relative;
+    top: -2rem;
+    left: 1rem;
+}
+
+.comment-list .comment{
+    text-align: left;
+    border: 2px solid grey;
+    padding: 2rem;
+    margin: 2rem;
+}
+
+.comment-list .comment .comment-body a{
+    position: relative;
+    /* margin-top: -3px; */
+    top: -3rem;
+    color: black;
+    text-decoration: none;
+    font-size: 2rem;
+}
+
+.comment-list .comment .comment-body p{
+    position: relative;
+    top: -4rem;
+    font-size: 3rem;
+}
+
+
+@media (max-width:768px){
+    .blog-Big{
+        display: grid;
+    }
+
+    .blogPosts{
+        width: 100%;
+        display: block;
+        padding-top: 8rem;
+    }
+        
+    .blogPosts .blog .blog-head {
+        display: block;
+        text-align: center;
+        padding: 1rem;
+    }
+
+    .blogPosts .blog .blog-head .blogTime {
+        width: 21%;
+        height: 20%;
+        margin-left: 0;
+    }
+
+
+    .blogPosts .blog .blog-head .blogTime span{
+        position: relative;
+        top: -2rem;
+    }
+
+    .blogPosts .blog .blog-head .blogTime p{
+        background-color: rgb(255, 208, 52);
+        width: 74%;
+        height: 10rem;
+        position: relative;
+        margin-top: 1.5rem;
+        font-size: 3rem;
+        font-weight: 900;
+    }
+
+    .blogPosts .blog .blog-head .blogAuthor{
+        width: 87%;
+    }
+
+    .blogPosts .blog .blog-head .blogAuthor .nameblog{
+        font-size: 3rem;
+        line-height: 4rem;
+        text-align: left;
+        text-transform: uppercase;
+    }
+
+    .blogPosts .blog .blog-head .blogAuthor .authorBlog {
+        text-align: left;
+        position: relative;
+        text-transform: uppercase;
+        top: -3rem;
+    }
+
+
+    .blogPosts .blog .blog-content {
+        text-align: left;
+        margin-top: -6rem;
+        padding: 0.5rem;
+        padding-top: 0;
+        width: 82%;
+    }
+
+    .blogPosts .blog .blog-read {
+        text-align: left;
+        padding: 0rem;
+        margin-left: 1rem;
+    }
+
+
+
+    .sideBlog .sidebar {
+        padding: 1.5rem;
+        padding-top: 1rem;
+    }
+
+    .sideBlog .sidebar .widget .searchform input[type="text"] {
+        font-size: 2.5rem;
+        border: 1px solid gray;
+    }
+}

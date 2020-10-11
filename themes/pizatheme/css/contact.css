@@ -1,0 +1,91 @@
+/* 
+    Theme Name:gymtheme
+    Theme URI:
+    Author:David Vinter
+    Author URI:
+    Description: My Theme for GYM
+    Version:1.0
+    License:GNU General Public License v2 or later
+    License URI: http://wwww.gnu.org/licenses/gpl-2.0.html
+    Tags:Css Grid, Flexbox, Responsive, Bootstrap, Javascript
+
+*/
+
+
+
+/* Contact */
+
+.reservation {
+    display: flex;
+}
+
+.reservation .resImg{
+    width: 50%;
+    margin-top: 5rem;
+
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-size: cover;
+}
+
+.reservation .resForm{
+    width: 50%;
+    text-align: left;
+}
+
+.reservation .resForm .field input, textarea{
+    font-size: 2rem;
+    padding: 0.8rem;
+    width: 35rem;
+    border: 2px solid black;
+    font-family: var(--mainFont);
+    cursor: pointer;
+}
+
+.reservation .resForm .field textarea{
+    height: 20rem;
+}
+
+.reservation .resForm .btn{
+    text-transform: lowercase;
+    background: var(--backColor);
+    border: none;
+    font-size: 2rem;
+    margin-top: 2rem;
+    padding: 1.5rem;
+    width: 19rem;
+    border-radius: 9px;
+    margin-bottom: 4rem;
+    color: white;
+    transition: 0.3 ease all;
+    font-family: var(--mainFont);
+    cursor: pointer;
+}
+.reservation .resForm .btn:hover{
+    color: black;
+}
+
+
+@media(max-width:768px){
+    
+    .reservation {
+        display: block;
+    }
+
+    .reservation .resImg {
+        width: 100%;
+        height: 73rem;
+        margin-top: 5rem;
+        background-repeat: no-repeat;
+        background-position: center center;
+        background-size: cover;
+    }
+    .reservation textarea{
+        font-size: 2rem;
+        padding: 0.8rem;
+        width: 35rem;
+        border: 2px solid black;
+        font-family: var(--mainFont);
+        cursor: pointer;
+    }
+}

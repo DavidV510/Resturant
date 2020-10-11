@@ -1,0 +1,357 @@
+/* 
+    Theme Name:gymtheme
+    Theme URI:
+    Author:David Vinter
+    Author URI:
+    Description: My Theme for GYM
+    Version:1.0
+    License:GNU General Public License v2 or later
+    License URI: http://wwww.gnu.org/licenses/gpl-2.0.html
+    Tags:Css Grid, Flexbox, Responsive, Bootstrap, Javascript
+
+*/
+
+
+
+/* Front */
+
+.open{
+    position: relative;
+    
+    height: 80rem;
+}
+.open .open-content{
+    position: absolute;
+    height: 100%;
+    top: 0;
+    text-align: center;
+    display: block;
+    background-size: cover;
+    background-position: center center;
+    background-repeat: no-repeat;
+}
+
+.open .open-content::after{
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.6);
+}
+.open .open-content .semi-content{
+    position: relative;
+    margin: 14rem;
+    z-index: 1;
+}
+.open .open-content h1{
+    width: 100%;
+    font-weight: 900;
+    color: white;
+}
+
+.open .open-content p{
+    line-height: 6rem;
+    font-weight: 400;
+    font-size: 2rem;
+    color: white;
+}
+
+.open .open-content button{
+    background-color: rgb(255, 122, 13);
+    color: white;
+    font-size: 2.2rem;
+    font-family: var(--mainFont);
+    border: none;
+    border-radius: 13px;
+    padding: 1.5rem 4rem;
+    cursor: pointer;
+    transition: 0.3s ease all;
+}
+
+.open .open-content button:hover{
+    color: black;
+}
+
+
+.special{
+
+}
+
+.special .special-content h1{
+    text-align: center;
+    color: var(--backColor);
+}
+
+.special .special-content .special-menu{
+    display: grid;
+    grid-template-columns: repeat(3,33%);
+    grid-column-gap: 15px;
+    margin: 4rem;
+}
+
+.special .special-content .special-menu .special-one{
+    position: relative;
+    height: 60rem;
+}
+.special .special-content .special-menu .special-one:nth-child(1) {
+    grid-column:1;
+}
+
+.special .special-content .special-menu .special-one:nth-child(2) {
+    grid-column: 2;
+}
+
+.special .special-content .special-menu .special-one:nth-child(3) {
+    grid-column: 3;
+}
+
+.special .special-content .special-menu .special-one .special-one-img{
+    height: 100%;
+}
+
+.special .special-content .special-menu .special-one .special-one-img img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+.special .special-content .special-menu .special-one .special-one-content{
+    opacity: 0;
+    position: absolute;
+    top: 0;
+    left: 0;
+    text-align: center;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(241, 168, 57, 0.664);
+    transition: 0.3s ease all;
+}
+
+.special .special-content .special-menu .special-one .special-one-content h1{
+    color: white;
+    font-size: 5rem;
+    margin-top: 8rem;
+}
+
+.special .special-content .special-menu .special-one .special-one-content p{
+    font-size: 2.2rem;
+    color: white;
+    line-height: 5rem;
+    font-weight: 100;
+}
+.special .special-content .special-menu .special-one .special-one-content h3{
+    font-size: 5rem;
+    margin-top: -1rem;
+    color: white;
+}
+
+
+.special .special-content .special-menu .special-one:hover .special-one-content{
+        opacity: 100%;
+}
+
+
+
+.product{
+    display: flex;
+    height: 100vh;
+    background-size: cover;
+    background-position: center center;
+    background-repeat: no-repeat;
+}
+
+.product .product-content{
+    width: 50%;
+    padding: 5rem;
+    text-align: left;
+    color: white;
+}
+
+.product .product-content h1{
+    font-size: 5rem;
+}
+
+.product .product-content p{
+    font-size: 3.5rem;
+    line-height: 8rem;
+    font-weight: 200;
+}
+.product .product-content button{
+    background-color:var(--backColor);
+    color: white;
+    font-size: 2.2rem;
+    font-family: var(--mainFont);
+    border: none;
+    border-radius: 13px;
+    padding: 1.5rem 4rem;
+    cursor: pointer;
+    transition: 0.3s ease all;
+}
+.product .product-content button:hover{
+    color: black;
+}
+
+.product .product-img{
+    width: 50%;
+}
+
+.product .product-img img{
+    position: relative;
+    top: 7rem;
+    left: 7rem;
+}
+
+
+
+.contact{
+    display: flex;
+}
+
+.contact .map{
+    width:50%;
+}
+
+.contact .contact-form{
+    width: 50%;
+}
+
+.contact .contact-form .resForm{
+    padding: 2rem;
+    padding-top: 0;
+    text-align: left;
+}
+
+.contact .contact-form .resForm h2{
+    color: white;
+}
+.contact .contact-form .resForm .field input::placeholder, textarea::placeholder{
+    color: white;
+}
+.contact .contact-form .resForm .field input, textarea{
+    font-size: 2rem;
+    padding: 0.8rem;
+    color: white;
+    margin-top: 1.2rem;
+    width: 50rem;
+    border: 2px solid white;
+    font-family: var(--mainFont);
+    cursor: pointer;
+    background-color: transparent;
+}
+
+.contact .contact-form .resForm .field textarea{
+    height: 20rem;
+}
+
+.contact .contact-form .resForm .btn{
+    text-transform: lowercase;
+    background: var(--backColor);
+    border: none;
+    font-size: 2rem;
+    margin-top: 2rem;
+    padding: 1.5rem;
+    width: 19rem;
+    border-radius: 9px;
+    margin-bottom: 4rem;
+    color: white;
+    transition: 0.3 ease all;
+    font-family: var(--mainFont);
+    cursor: pointer;
+}
+.contact .contact-form .resForm .btn:hover{
+    color: black;
+}
+
+@media (max-width:768px){
+
+    .open .open-content p{
+        padding: 1rem;
+        line-height: 3rem;
+        font-weight: 400;
+        font-size: 1.3rem;
+        color: white;
+    }
+    
+    .open .open-content .semi-content{
+        position: relative;
+        margin: 0rem;
+        z-index: 1;
+    }
+
+
+    .special .special-content .special-menu{
+        display: block;
+        margin: 0;
+    }
+
+    .special .special-content .special-menu .special-one{
+        position: relative;
+        height: 60rem;
+        width: 100%;
+        margin-top: 2rem;
+    }
+
+    .special .special-content .special-menu .special-one:nth-child(1){
+        display: block;
+    }
+
+
+    .special .special-content .special-menu .special-one .special-one-content{
+        opacity: 100%;
+    }
+
+
+    .product{
+        display: block;
+        text-align: center;
+        height: 120vh;
+        background-size: cover;
+        background-position: center center;
+        background-repeat: no-repeat;
+    }
+
+    .product .product-content {
+        width: 100%;
+        padding: 1rem 0rem;
+        text-align: center;
+        color: white;
+    }
+    .product .product-content h1{
+        font-size: 4rem;
+    }
+    .product .product-content p {
+        font-size: 2rem;
+        line-height: 5rem;
+        font-weight: 200;
+    }
+
+    .product .product-img img {
+        position: relative;
+        top: 6rem;
+        left: 8rem;
+        height: 20rem;
+    }
+
+
+    .contact{
+        display:block;
+    }
+
+
+    .contact .map{
+        width:100%;
+    }
+    
+    .contact .contact-form{
+        width: 100%;
+    }
+
+
+    .contact .contact-form .resForm .field input, textarea{
+        width: 30rem;
+    }
+
+}
+
+

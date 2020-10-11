@@ -1,0 +1,85 @@
+/* 
+    Theme Name:gymtheme
+    Theme URI:
+    Author:David Vinter
+    Author URI:
+    Description: My Theme for GYM
+    Version:1.0
+    License:GNU General Public License v2 or later
+    License URI: http://wwww.gnu.org/licenses/gpl-2.0.html
+    Tags:Css Grid, Flexbox, Responsive, Bootstrap, Javascript
+
+*/
+
+
+
+/* Menu */
+
+
+.page .page-content .pizza-menu .pizzah1{
+    text-align: left;
+    font-size: 4.2rem;
+    color: var(--backColor);
+}
+
+.page .page-content .pizza-menu .pizza-List{
+    display: grid;
+    grid-template-columns: 50% 50%;
+    column-gap: 3rem;
+}
+
+.page .page-content .pizza-menu .pizza-List .pizza{
+    width: 100%;
+    height: 100%;
+}
+
+.page .page-content .pizza-menu .pizza-List .pizza img{
+    width: 100%;
+    height: 33rem;
+    object-fit: cover;
+}
+
+.page .page-content .pizza-menu .pizza-List .pizza .pizza-head{
+    display: grid;
+    grid-template-columns: 50% 50%;
+    border-bottom: 2px solid grey;
+}
+
+.page .page-content .pizza-menu .pizza-List .pizza .pizza-head h3{
+    font-size: 3rem;
+    line-height: 1rem;
+    text-align: left;
+    text-transform: uppercase;
+
+}
+.page .page-content .pizza-menu .pizza-List .pizza .pizza-head .pricePizza{
+    position: relative;
+    text-align: right;
+    color: rgb(209, 180, 13);
+}
+
+.page .page-content .pizza-menu .pizza-List .pizza .pizza-content p{
+    text-align: left;
+    font-size: 2.2rem;
+    line-height: 3rem;
+}
+
+
+@media (max-width:768px){
+    .page .page-content .pizza-menu .pizza-List{
+        display: block;
+    }
+    .page .page-content .pizza-menu .pizza-List .pizza {
+        width: 104%;
+        height: 100%;
+    }
+    .page .page-content .pizza-menu .pizza-List .pizza .pizza-head h3 {
+        margin-top: 0;
+        font-size: 3rem;
+        line-height: 4rem;
+        text-align: left;
+        text-transform: uppercase;
+        padding: 1.5rem;
+    }
+    
+}

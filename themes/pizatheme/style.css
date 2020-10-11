@@ -1,0 +1,92 @@
+/* 
+    Theme Name:gymtheme
+    Theme URI:
+    Author:David Vinter
+    Author URI:
+    Description: My Theme for GYM
+    Version:1.0
+    License:GNU General Public License v2 or later
+    License URI: http://wwww.gnu.org/licenses/gpl-2.0.html
+    Tags:Css Grid, Flexbox, Responsive, Bootstrap, Javascript
+
+*/
+html {
+    box-sizing: border-box;
+    font-size: 62.5%;
+    margin-top: 0px !important;
+}
+body{
+   position: relative;
+}
+
+:root{
+    --backColor:rgb(146, 18, 18);
+    --yellow: rgb(255, 208, 52);
+    --white:white;
+
+    --mainFont:'Raleway', sans-serif;
+    --semiFOnt:'Roboto', sans-serif;
+}
+
+h1{
+    font-size: 6rem;
+    font-family: var(--mainFont);
+    font-weight: bold;
+}
+
+h2{
+    font-size: 4.5rem;
+    font-family: var(--mainFont);
+    font-weight: bold;
+}
+
+h3{
+    font-size: 6rem;
+    font-family: var(--mainFont);
+    font-weight: bold;
+}
+
+p{
+    font-size: 3rem;
+    font-family: var(--semiFOnt);
+    font-weight: 400;
+}
+
+
+
+ul{
+    list-style: none;
+    margin: 0; padding: 0;
+}
+
+li{
+    font-family: var(--mainFont);
+}
+
+
+.container{
+    max-width: 120rem;
+}
+
+#gallery-1 img{
+    border:none!important;
+}
+.fluidbox__thumb{
+    width: 35rem;
+    border: none;
+}
+
+
+#map{
+    height: 100%;
+}
+
+@media (max-width:768px){
+    .gallery-item{
+        float: none !important;
+        width: 100% !important;
+    }
+    #gallery-1 br{
+        display: none !important;
+    }
+}

@@ -1,0 +1,182 @@
+/* 
+    Theme Name:gymtheme
+    Theme URI:
+    Author:David Vinter
+    Author URI:
+    Description: My Theme for GYM
+    Version:1.0
+    License:GNU General Public License v2 or later
+    License URI: http://wwww.gnu.org/licenses/gpl-2.0.html
+    Tags:Css Grid, Flexbox, Responsive, Bootstrap, Javascript
+
+*/
+
+
+
+/* Page */
+
+
+.page{
+    position: relative;
+}
+
+.page .upper{
+    position: relative;
+    height: 50rem;
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    display: grid;
+    grid-template-columns: repeat(3,33.333%);
+}
+
+.page .upper::after{
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.6);
+}
+
+.page .upper h3{
+    z-index: 1;
+    grid-column: 2;
+    margin-top: 0;
+    text-align: center;
+    padding-top: 20rem;
+    color: white;
+    font-family: var(--mainFont);
+    font-weight: 900;
+}
+
+.page .page-content{
+    position: relative;
+    height: 100%;
+    width: 70%;
+    background: white;
+    padding: 7rem;
+    margin: 0 auto;
+    left: 0;
+    bottom: 15rem;
+    line-height: 6rem;
+    text-align: center;
+}
+
+.page .page-content p{
+    font-size: 2rem;
+    line-height: 6rem;
+    font-weight: 300;
+}
+
+
+
+/*  BOXES FOR IMAGES */
+    .boxes{
+        margin: 0 auto;
+        margin-top: 0rem;
+        width: 90%;
+        height: 60.5rem;
+        display: grid; 
+        grid-template-columns: repeat(3,33.333333%);
+        color: white;
+    }
+    .boxes .box{
+        display: grid;
+        grid-template-rows: repeat(1,50%);
+    }
+    .boxes .box:nth-child(1){
+        grid-column: 1;
+        background-color: #f19f30;
+    }
+
+    .boxes .box:nth-child(2){
+        grid-column: 2;
+        background-color: #1a9b0f;
+       
+    }
+
+    .boxes .box:nth-child(3){
+        grid-column: 3;
+        background-color: #9b0f0f;
+    }
+
+    .boxes .box .box-img{
+        width: 100%;
+       
+    }
+
+    .boxes .box .box-img img{
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+    }
+    .boxes .box .box-content{
+        text-align: center;
+        padding: 0.5rem;
+    }
+
+    .boxes .box .box-content h3{
+        font-size: 4rem;
+    }
+    .boxes .box .box-content p{
+        font-size: 2rem;
+    }
+
+    /* Box Order */
+
+    .boxes .box:nth-child(2) .box-img{
+        order: 2;
+    }
+    .boxes .box:nth-child(2) .box-content{
+        order: 1;
+    }
+
+@media(max-width:768px){
+
+    .page .page-content {
+        position: relative;
+        width: 100%;
+        background: white;
+        padding: 0rem;
+        margin: 0 auto;
+        left: 0%;
+        top: -2rem;
+        bottom: 0%;
+        line-height: 6rem;
+        text-align: center;
+        
+    }
+    
+    .page .page-content p {
+        font-size: 1.6rem;
+        line-height: 6rem;
+        font-weight: 300;
+        padding: 0.5rem;
+    }
+
+    .page .upper::after{
+        height: 100%;
+    }
+
+    .page .upper h3{
+        grid-column: 1/4;
+    }
+
+
+    .boxes{
+        display: block;
+        height: 100%;
+        margin-top: 0;
+    }
+    /* Box Order */
+
+    .boxes .box:nth-child(2) .box-img{
+        order: 1;
+    }
+    .boxes .box:nth-child(2) .box-content{
+        order: 2;
+    }
+
+}

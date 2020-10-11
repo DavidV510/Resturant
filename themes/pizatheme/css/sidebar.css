@@ -1,0 +1,79 @@
+/* 
+    Theme Name:gymtheme
+    Theme URI:
+    Author:David Vinter
+    Author URI:
+    Description: My Theme for GYM
+    Version:1.0
+    License:GNU General Public License v2 or later
+    License URI: http://wwww.gnu.org/licenses/gpl-2.0.html
+    Tags:Css Grid, Flexbox, Responsive, Bootstrap, Javascript
+
+*/
+
+
+
+/* Side Bar */
+.sideBlog{
+    width: 38%;
+    padding-top: 2rem;
+}
+.sideBlog .sidebar{
+    padding: 3rem;
+    padding-top: 1rem;
+}
+
+.sideBlog .sidebar .widget h3{
+    font-size: 3rem;
+    text-align: left;
+    text-transform: uppercase;
+    margin-bottom: 0;
+}
+.sideBlog .sidebar .widget .searchform {
+    text-align: left;
+}
+
+.sideBlog .sidebar .widget .searchform .screen-reader-text{
+    display: none;
+}
+
+.sideBlog .sidebar .widget .searchform input[type="text"]{
+    font-size: 3rem;
+    border: 1px solid gray;
+}
+
+.sideBlog .sidebar .widget .searchform input[type="submit"]{
+    text-transform: lowercase;
+    background: var(--backColor);
+    border: none;
+    font-size: 2rem;
+    margin-top: 2rem;
+    padding: 1.2rem;
+    width: 16rem;
+    border-radius: 9px;
+    margin-bottom: 4rem;
+    color: white;
+    transition: 0.3 ease all;
+    font-family: var(--mainFont);
+    cursor: pointer;
+}
+.sideBlog .sidebar .widget .searchform input[type="submit"]:hover{
+    color: black;
+}
+
+.sideBlog .sidebar .widget ul{
+    padding: 5rem;
+    padding-top: 0;
+    text-align: left;
+}
+
+.sideBlog .sidebar .widget ul li a{
+    text-decoration: none;
+    color: black;
+    font-size: 2rem;
+    transition: 0.3 ease all;
+}
+
+.sideBlog .sidebar .widget ul li a:hover{
+    color:var(--yellow);
+}

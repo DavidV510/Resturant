@@ -1,0 +1,228 @@
+/* 
+    Theme Name:gymtheme
+    Theme URI:
+    Author:David Vinter
+    Author URI:
+    Description: My Theme for GYM
+    Version:1.0
+    License:GNU General Public License v2 or later
+    License URI: http://wwww.gnu.org/licenses/gpl-2.0.html
+    Tags:Css Grid, Flexbox, Responsive, Bootstrap, Javascript
+
+*/
+
+
+
+/* Head */
+
+.head {
+
+}
+
+.head .logo{
+
+}
+.head .gridHead{
+    max-width: 100%;
+    display: grid;
+    grid-template-columns: repeat(5,20%);
+    grid-template-rows: repeat(2,40%);
+    border-bottom: grey 2px solid;
+    height: 20rem;
+}
+
+.head .gridHead .logo{
+    grid-column: 2/5;
+}
+
+.head .gridHead .logo-img{
+    position: relative;
+    left: 38%;
+    top: 13%;
+    width: 25%;
+}
+
+
+/* Social Menu */
+#menu-social{
+    display: flex;
+}
+#menu-social li{
+    -webkit-font-smoothing: antialiased;
+    display: inline-block;
+    font-style: normal;
+    font-variant: normal;
+    text-rendering: auto;
+    line-height: 1;
+    margin: 3rem 1.4rem;
+}
+
+#menu-social li .sr-text{
+    display: none;
+}
+#menu-social li a::before{
+    color: black;
+}
+#menu-social li a{
+    font-size: 3rem;
+    text-decoration: none;
+
+}
+
+.social-menu .par{
+    font-size: 1.6rem;
+    margin-top: 0;
+    /* margin-right: 6rem; */
+    position: relative;
+    right: 12%;
+    font-family: var(--mainFont);
+}
+
+
+/* Main Menu */
+
+#menu-head{
+    grid-template-columns: repeat(5,20%);
+    display: grid;
+    margin-top: 2rem;
+    position: relative;
+}
+
+#menu-head li{
+    text-align: center;
+    font-size: 2rem;
+    margin: 1rem 2rem;
+    text-transform: uppercase;
+}
+
+#menu-head li a{
+    text-decoration: none;
+    color: black;
+}
+
+#menu-head  .current_page_item{
+    padding-bottom: 5px;
+    border-bottom: 5px solid var(--backColor);
+}
+
+#menu-head .sub-menu{
+    display: none;
+    opacity: 100;
+    position: absolute;
+    z-index: 10;
+    margin-left: 5rem;
+    top: 4rem;
+    background: white;
+    transition: 0.3s ease all;
+}
+#menu-head .sub-menu li{
+    margin-top: 1.5rem;
+}
+
+#menu-head .sub-menu li:hover a{
+    color: var(--backColor);
+}
+
+
+#menu-head:hover .sub-menu{
+    display: block;
+}
+
+
+.mobile-menu{
+    display: none;
+}
+
+@media (max-width:768px){
+
+    .head .gridHead {
+        max-width: 100%;
+        display: block;
+        border-bottom: grey 2px solid;
+        height: 100%;
+    }
+
+    .head .gridHead .logo-img {
+        position: relative;
+        left: 31%;
+        margin-top: 2rem;
+        width: 40%;
+    }
+    .social-menu{
+        padding-left: 0.8rem;
+    }
+
+
+    .socialMenu{
+        padding-left: 0.5rem;
+        width: 50%;
+        margin: 0 auto;
+    }
+
+    .social-menu .par{
+        text-align: center;
+        font-size: 1.8rem;
+        margin-top: 0;
+        /* margin-right: 6rem; */
+        position: relative;
+        right: 0%;
+      
+    }
+
+    #menu-social {
+        text-align: center;
+        display: grid;
+        grid-template-columns: repeat(4,25%);
+    }
+
+    #menu-social li {
+        -webkit-font-smoothing: antialiased;
+        display: inline-block;
+        font-style: normal;
+        font-variant: normal;
+        text-rendering: auto;
+        line-height: 1;
+        margin: 2rem 0.5rem;
+    }
+
+    #menu-head .sub-menu{
+        display: none;
+    }
+
+    #menu-head:hover .sub-menu{
+        display: none;
+    }
+
+    /* Mobile Menu */
+    .mobile-menu{
+        display: block;
+        margin-top: 1.5rem;
+        text-align: center;
+        font-size: 2.5rem;
+        background-color: var(--backColor);
+        padding: 1rem;
+        
+    }
+    .mobile-menu a{
+        color: var(--white);
+        text-transform: uppercase;
+    }
+
+    .mobile-menu .mobileText{
+        font-family: var(--mainFont);
+        font-weight: bold;
+    }
+
+    /* Menu Head */
+    #menu-head {
+        display: none;
+        margin-top: 0rem;
+    }
+
+
+    #menu-head li{
+        font-size: 2rem;
+        margin: 2rem 1rem;
+    }
+    
+}
