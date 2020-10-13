@@ -15,16 +15,16 @@
     function pizza_scripts(){
 
         wp_enqueue_style('normalize', get_template_directory_uri().'/css/normalize.css', array(), '8.0.1');
-        wp_enqueue_style('head', get_template_directory_uri().'/css/header.css' ,NULL, '1.0.3.3');
-        wp_enqueue_style('foot', get_template_directory_uri().'/css/footer.css' ,NULL, '1.0.3.3');
-        wp_enqueue_style('blog', get_template_directory_uri().'/css/blog.css' ,NULL, '1.0.3.3');
-        wp_enqueue_style('pageAbout', get_template_directory_uri().'/css/page-aboutUs.css' ,NULL, '1.0.3.3');
-        wp_enqueue_style('pageMenu', get_template_directory_uri().'/css/menu.css' ,NULL, '1.0.3.3');
-        wp_enqueue_style('sidebar', get_template_directory_uri().'/css/sidebar.css' ,NULL, '1.0.3.3');
-        wp_enqueue_style('contact', get_template_directory_uri().'/css/contact.css' ,NULL, '1.0.3.3');
-        wp_enqueue_style('home', get_template_directory_uri().'/css/home.css' ,NULL, '1.0.3.3');
-        wp_enqueue_style('polyfill', get_template_directory_uri().'/css/polyfill.css' ,NULL, '1.0.3.3');
-        wp_enqueue_style('style', get_stylesheet_uri(), array('normalize','head','foot','pageAbout','pageMenu','sidebar','contact','home','polyfill'), '1.0.3.3');
+        wp_enqueue_style('head', get_template_directory_uri().'/css/header.css' ,NULL, '1.0.3.4');
+        wp_enqueue_style('foot', get_template_directory_uri().'/css/footer.css' ,NULL, '1.0.3.4');
+        wp_enqueue_style('blog', get_template_directory_uri().'/css/blog.css' ,NULL, '1.0.3.4');
+        wp_enqueue_style('pageAbout', get_template_directory_uri().'/css/page-aboutUs.css' ,NULL, '1.0.3.4');
+        wp_enqueue_style('pageMenu', get_template_directory_uri().'/css/menu.css' ,NULL, '1.0.3.4');
+        wp_enqueue_style('sidebar', get_template_directory_uri().'/css/sidebar.css' ,NULL, '1.0.3.4');
+        wp_enqueue_style('contact', get_template_directory_uri().'/css/contact.css' ,NULL, '1.0.3.4');
+        wp_enqueue_style('home', get_template_directory_uri().'/css/home.css' ,NULL, '1.0.3.4');
+        wp_enqueue_style('polyfill', get_template_directory_uri().'/css/polyfill.css' ,NULL, '1.0.3.4');
+        wp_enqueue_style('style', get_stylesheet_uri(), array('normalize','head','foot','pageAbout','pageMenu','sidebar','contact','home','polyfill'), '1.0.3.4');
 
         wp_enqueue_script('jquery');
 

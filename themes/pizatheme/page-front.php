@@ -33,6 +33,7 @@ get_header(); ?>
                 while($pizzas->have_posts()): $pizzas->the_post();
                 ?>  
                 <div class="special-one">
+                    <a href="<?php the_permalink(); ?>">
                   <div class="special-one-img">
                   <img src="<?php echo get_the_post_thumbnail_url() ?>" alt="">
                   </div>
@@ -46,6 +47,7 @@ get_header(); ?>
                     <h3>$<?php echo $price; ?></h3>
                     
                   </div>
+                  </a>
                 </div>
 
 

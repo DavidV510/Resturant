@@ -10,9 +10,9 @@
         while($pizzas->have_posts()): $pizzas->the_post();
          ?>
          <div class="pizza">
-        
+        <a href="<?php the_permalink(); ?>">
           <img src="<?php echo get_the_post_thumbnail_url() ?>" class="pizzaImg">
-          
+          </a>
           <div class="pizza-head">
             <h3 class="namePizza"><?php the_title() ?></h3>
             <?php 
@@ -24,7 +24,7 @@
           <div class="pizza-content">
               <?php the_content(); ?>
           </div>
-
+          
          </div>
       <?php endwhile;wp_reset_postdata(); ?>
     </div>
